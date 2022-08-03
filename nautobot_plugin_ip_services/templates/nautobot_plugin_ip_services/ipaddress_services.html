@@ -1,0 +1,27 @@
+{% load helpers %}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Services</strong>
+    </div>
+    <table class="table table-hover panel-body attr-table">
+        {% for row in exposed_services %}
+        <tr>
+            <td>{{ row.name }}</td>
+            <td>
+                <span class="text-muted">{{ row.proto }}</span>
+            </td>
+            <td>
+                <span class="text-muted">{{ row.port }}</span>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% if perms.ipam.add_service and assigned_device %}
+    <div class="panel-footer text-right noprint">
+            <a href="{% url 'plugins:nautobot_plugin_ip_services:custom_service_edit' device=assigned_device.pk ipaddress=ipaddress.pk %}" class="btn btn-xs btn-primary">
+            <span class="mdi mdi-plus-thick" aria-hidden="true"></span> Assign service
+        </a>
+    </div>
+    {% endif %}
+</div>
