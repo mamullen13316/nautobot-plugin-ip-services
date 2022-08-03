@@ -11,4 +11,20 @@ In addition, users can also use the `Assign service` button to define new Servic
 ![image](https://user-images.githubusercontent.com/6945229/182711414-a1f1636f-74cc-4d67-ba69-0867263e9076.png)
 
 ## Setup
-TBD
+1. Install the package on the Nautobot server:
+```bash
+pip install nautobot-plugin-ip-services
+```
+  
+2. Add plugin to `PLUGINS` in `nautobot_config.py`:
+```python
+PLUGINS = [
+    "nautobot_plugin_ip_services",
+]
+```
+3. Restart the Nautobot services:
+```bash
+sudo systemctl restart nautobot nautobot-worker nautobot-scheduler 
+```
+
+
