@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nautobot-plugin-ip-services"
-version = "1.0.0"
+version = "1.0.1"
 description = "View/Manage Services from IPAM"
 authors = ["Matt Mullen <mullenmd@gmail.com>"]
 readme = "README.md"
