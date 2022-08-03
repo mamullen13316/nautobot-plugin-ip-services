@@ -19,7 +19,7 @@ pip install nautobot-plugin-ip-services
 2. Add plugin to `PLUGINS` in `nautobot_config.py`:
 ```python
 PLUGINS = [
-    "nautobot-plugin-ip-services",
+    "nautobot_plugin_ip_services",
 ]
 ```
 3. Restart the Nautobot services:
