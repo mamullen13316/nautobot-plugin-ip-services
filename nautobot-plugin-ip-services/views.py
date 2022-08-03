@@ -1,4 +1,4 @@
-"""Views for nautobot_plugin_ip_services."""
+"""Views for nautobot-plugin-ip-services."""
 
 from django.shortcuts import get_object_or_404, redirect, render
 from nautobot.ipam.forms import ServiceForm
@@ -8,7 +8,7 @@ from nautobot.dcim.models import Device
 from nautobot.ipam.models import IPAddress
 
 
-from nautobot_plugin_ip_services import models
+from nautobot-plugin-ip-services import models
 
 class CustomServiceEditView(generic.ObjectEditView):
     queryset = Service.objects.prefetch_related("ipaddresses")

@@ -1,4 +1,4 @@
-from nautobot_plugin_ip_services import __version__
+from nautobot-plugin-ip-services import __version__
 
 
 def test_version():

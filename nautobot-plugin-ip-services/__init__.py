@@ -1,13 +1,13 @@
-"""nautobot_plugin_ip_services Plugin Initilization."""
+"""nautobot-plugin-ip-services Plugin Initilization."""
 
 from nautobot.extras.plugins import PluginConfig
 
 
 class NautobotPluginIpServicesConfig(PluginConfig):
-    """Plugin configuration for the nautobot_plugin_ip_services plugin."""
+    """Plugin configuration for the nautobot-plugin-ip-services plugin."""
 
-    name = "nautobot_plugin_ip_services"  # Raw plugin name; same as the plugin's source directory.
-    verbose_name = "nautobot_plugin_ip_services"  # Human-friendly name for the plugin.
+    name = "nautobot-plugin-ip-services"  # Raw plugin name; same as the plugin's source directory.
+    verbose_name = "nautobot-plugin-ip-services"  # Human-friendly name for the plugin.
     description = "Plugin providing ability to view/add services from an IP Address"
     version = "0.1.0"
     author = "Matt Mullen"

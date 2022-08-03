@@ -1,8 +1,8 @@
-"""Urls for nautobot_plugin_ip_services."""
+"""Urls for nautobot-plugin-ip-services."""
 
 from django.urls import path
 
-from nautobot_plugin_ip_services import views
+from nautobot-plugin-ip-services import views
 
 urlpatterns = [
     path(
