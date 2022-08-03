@@ -19,7 +19,7 @@ class IPServices(PluginTemplateExtension):
          "name": obj.name
          } for obj in services]
 
-        return self.render("nautobot-plugin-ip-services/ipaddress_services.html", extra_context={
+        return self.render("nautobot_plugin_ip_services/ipaddress_services.html", extra_context={
             "exposed_services": self.exposed_services,
             "assigned_device": self.assigned_device,
             "ipaddress": self.ipaddr_obj 

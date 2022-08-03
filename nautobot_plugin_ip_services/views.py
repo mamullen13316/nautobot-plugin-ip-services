@@ -8,7 +8,7 @@ from nautobot.dcim.models import Device
 from nautobot.ipam.models import IPAddress
 
 
-from nautobot-plugin-ip-services import models
+from nautobot_plugin_ip_services import models
 
 class CustomServiceEditView(generic.ObjectEditView):
     queryset = Service.objects.prefetch_related("ipaddresses")

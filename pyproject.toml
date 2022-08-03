@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nautobot-plugin-ip-services"
-version = "1.0.1"
+version = "1.0.4"
 description = "View/Manage Services from IPAM"
 authors = ["Matt Mullen <mullenmd@gmail.com>"]
 readme = "README.md"
@@ -9,6 +9,10 @@ repository = "https://github.com/mamullen13316/nautobot-plugin-ip-services"
 include = [
     "LICENSE",
 ]
+packages = [
+    { include = "nautobot_plugin_ip_services" }
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.8"

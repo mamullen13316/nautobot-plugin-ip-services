@@ -6,12 +6,12 @@ from nautobot.extras.plugins import PluginConfig
 class NautobotPluginIpServicesConfig(PluginConfig):
     """Plugin configuration for the nautobot-plugin-ip-services plugin."""
 
-    name = "nautobot-plugin-ip-services"  # Raw plugin name; same as the plugin's source directory.
+    name = "nautobot_plugin_ip_services"  # Raw plugin name; same as the plugin's source directory.
     verbose_name = "nautobot-plugin-ip-services"  # Human-friendly name for the plugin.
     description = "Plugin providing ability to view/add services from an IP Address"
-    version = "0.1.0"
+    version = "1.0.0"
     author = "Matt Mullen"
-    author_email = "matt.mullen@sophos.com"
+    author_email = "mullenmd@gmail.com"
     base_url = "nautobot-plugin-ip-services"  # (Optional) Base path to use for plugin URLs. Defaulting to app_name.
     required_settings = []  # A list of any configuration parameters that must be defined by the user.
     min_version = "1.0.0"  # Minimum version of Nautobot with which the plugin is compatible.

@@ -1,3 +1,3 @@
 from nautobot.utilities.testing import TestCase
 
-from nautobot-plugin-ip-services import views
+from nautobot_plugin_ip_services import views
